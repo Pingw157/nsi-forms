@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta charset="utf-8">
+     <title>Mon premier formulaire HTML5</title>
+     <link rel="stylesheet" href="Nom-formulaire.css">
+</head>
+
+<body>
+
+     <h1>Mon premier formulaire HTML5</h1>
+
+     <form action="cible.html">
+          <fieldset id="main">
+               <legend>Vos données personnelles</legend>
+
+               <label for="nom" class="fieldLbl">Nom: </label>
+               <input type="text" name="nom" placeholder="Nom">
+
+               <br><br>
+
+               <label for="prenom" class="fieldLbl">Prénom: </label>
+               <input type="text" name="prenom" placeholder="Prénom">
+
+               <br><br>
+
+               <label for="naissance" class="fieldLbl">Date de Naissance: </label>
+               <input type="date" name="dateNaiss" placeholder="jj/mm/aaaa">
+
+               <br><br>
+
+               <fieldset>
+                    <legend>Lieu de naissance</legend>
+
+                    <input type="radio" name="lieuNaiss" id="paris" value="paris">
+                    <label for="paris">Paris</label>
+                    <br><br>
+                    <input type="radio" name="lieuNaiss" id="autre" value="autre">
+                    <label for="autre">Autre</label>
+                    <br><br>
+                    <label for="depart">Choisissez </label>
+                    <input type="number" name="depart" min="1" max="95">
+
+               </fieldset>
+
+               <br>
+
+               <label for="adresse" class="fieldLbl">Adresse postale</label>
+               <textarea name="adresse" id="adresse" cols="30" rows="2" placeholder="Votre adresse"></textarea>
+
+               <br><br>
+
+               <label for="email" class="fieldLbl">Adresse mail </label>
+               <input type="email" name="email" id="email" placeholder="Mail">
+
+               <br><br>
+
+               <label for="pageWeb" class="fieldLbl"> Page personnelle </label>
+               <input type="url" name="pageWeb" id="pageWeb" placeholder="Votre page web">
+
+               <br><br>
+
+               <label for="telno" class="fieldLbl">Téléphone portable </label>
+               <input type="text" name="telno" placeholder="N° téléphone" pattern="[0-9]{10}">
+
+               <br><br>
+
+               <label for="classe">Classe </label>
+               <select name="classe" id="classe">
+                    <option value="sde1">2°1</option>
+                    <option value="sde2">2°2</option>
+                    <option value="sde3">2°3</option>
+                    <option value="sde4">2°4</option>
+                    <option value="sde5">2°5</option>
+                    <option value="sde6">2°6</option>
+                    <option value="pre1">1°1</option>
+                    <option value="pre2">1°2</option>
+                    <option value="pre3" selected="selected">1°3</option>
+                    <option value="pre4">1°4</option>
+                    <option value="pre5">1°5</option>
+                    <option value="pre6">1°6</option>
+                    <option value="tle1">T1</option>
+                    <option value="tle2">T2</option>
+               </select>
+
+               <br><br>
+
+               <label for="level">Niveau en HTML </label>
+               <input type="range" name="level" id="level" min="0" max="10" step="1">
+
+               <br><br>
+
+               <fieldset class="connaissances">
+                    <legend>connaissances</legend>
+                    <input type="checkbox" name="html" id="connaissanceHTML" checked>
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="css" id="connaissanceCSS">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="forms" id="connaissanceForms">
+                    <label for="forms">formulaires</label>
+                    <input type="checkbox" name="javascript" id="connaissanceJS">
+                    <label for="javascript">JavaScript</label>
+               </fieldset>
+
+               <br>
+
+               <button type="submit">Envoyer</button>
+               <input type="reset" value="Effacer">
+
+          </fieldset>
+
+     </form>
+
+     <p class="phrase">Formulaire réalisé en TP de 1 NSI avec le grand PERLEMOINE</p>
+
+</body>
+
+</html>
